@@ -1,0 +1,670 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ .header1{
+    position:absolute;
+    top:0;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+ }
+ 
+ .logo img {
+    height: 40px;
+    margin-right: auto;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.menu li {
+    margin-left: 60px;
+}
+
+.menu a {
+    color: rgb(255, 255, 255) ;
+    text-decoration: none ;
+    font-size: 18px;
+    padding: 5px 0;
+    position: relative;
+    font-weight: bold;
+}
+
+.menu a:hover::after {
+    content: ''; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.header-icons {
+    display: flex; 
+    align-items: center;
+    gap: 15px;
+}
+
+
+.header-icons .icon {
+    color: white; 
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    position: relative; 
+}
+
+.header-icons .icon::after {
+    content: ''; 
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 0;
+    height: 1.5px; 
+    background-color: white; 
+    transition: width 0.3s ease; 
+}
+
+.header-icons .icon:hover::after {
+    width: 100%;
+}
+
+
+
+.banner {
+    width: 100%;
+    height: 400px;
+    background-image:url(pic/banner3.png);
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    box-sizing: border-box;
+
+}
+
+.tittel h1 { 
+    font-size: 50px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.tittel h2 {
+    font-size: 35px;
+    margin: 15px 0 auto;
+    font-weight: normal;
+    background-color:rgba(255, 255, 255, 0.156);
+    padding: 15px 25px;
+    border-radius: 8px;
+}
+
+.form1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.form1 label {
+    font-size: 20px;
+}
+
+.form1 input[type="search"] {
+    padding: 10px; 
+    font-size: 18px; 
+    width: 400px;
+    max-width: 100%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: rgb(227, 230, 232);
+}
+.intro-text {
+    text-align: center;
+    font-size: 1.5rem; 
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+    line-height: 1.8;
+    background-color:rgba(34, 74, 95, 0.696);
+    padding: 20px;
+    border-radius: 10px; 
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .features {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .features {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  
+  .feature-card {
+    background-color: #fefefe;
+    border: 1px solid rgba(55, 74, 79, 0.416);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    flex: 1 1 calc(25% - 20px);
+    max-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+ 
+  .feature-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  }
+  
+
+   .feature-title {
+    font-size: 1.2rem;
+    color:rgb(55, 74, 79) ; 
+    font-weight: bold;
+    margin-bottom: 5px;
+    
+  }
+
+  .feature-description {
+    font-size: 0.9rem;
+    color: rgb(55, 74, 79); 
+    line-height: 1.5;
+    margin-top: 0;
+  }
+
+ 
+
+
+.content-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px;
+    text-align: center; 
+  }
+  
+  
+  .offer-container {
+    text-align: center; 
+    margin-bottom: 20px; 
+  }
+  
+  .exclusive-offer {
+    font-size: 1.8rem;
+    color:rgb(255, 255, 255);  ;
+    margin-bottom: 30px;
+    padding-top: 20px;
+  }
+  
+  .exclusive-offer ins {
+    text-decoration: none;
+    background-color: rgba(34, 74, 95, 0.696) ;
+    padding: 10px 30px;
+    border-radius: 5px;
+  }
+  
+  .offer-list {
+    list-style-type:none;
+    font-size: 1.1rem;
+    padding-left: 10px;
+  }
+  
+  .offer-list li {
+    margin-bottom: 10px;
+    color:rgb(23, 50, 64) ;
+  }
+  
+  .video-container {
+    text-align: center; 
+  }
+  
+  .video-container video {
+    width: 650px;
+    width:100%;
+    max-width: 800px; 
+    height: auto;
+    border: 3px solid #2a404f97;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+ 
+  .more-booking-container {
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .arrow {
+    font-size: 2rem;
+    margin-top: 10px;
+    display: block;
+  }
+  
+ 
+  .booking-details {
+    margin-top: 30px;
+    width: 100%;
+    padding: 20px;
+    background-color: #f4f6f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-details summary {
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgba(34, 74, 95, 0.997);
+    margin-bottom: 10px;
+    text-align: center; 
+  }
+  
+  .booking-form {
+    width: 100%;
+  }
+  .form-title{
+    color:rgba(34, 74, 95, 0.997) ;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    
+  }
+  .form-label{
+    color:rgba(64, 83, 94, 0.997) ;
+
+  }
+  .radio-label{
+    color:rgba(64, 83, 94, 0.997) ;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color:rgba(64, 83, 94, 0.997) ;
+  }
+  
+  .form-input:focus {
+    border-color: #203b4c;
+    outline: none;
+    box-shadow: 0 0 5px rgba(54, 79, 95, 0.5);
+  }
+  
+  .form-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .submit-button {
+    background-color: #2ecc71;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #27ae60;
+  }
+  
+  .reset-button {
+    background-color: #e74c3c;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reset-button:hover {
+    background-color: #c0392b;
+  }
+
+footer {
+    background-color: rgba(34, 74, 95, 0.696);
+    color: #fff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.fo {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.fo h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color:#fefefe;
+    text-align: center;
+}
+
+.fo ul {
+    list-style: none;
+    padding: 0;
+}
+
+.fo ul li {
+    margin-bottom: 10px;
+}
+
+.fo ul li a {
+    text-decoration: none;
+    color: #ddd;
+    transition: color 0.3s ease;
+    font-size: 16px;
+}
+
+.fo ul li a:hover {
+    color:#fefefe;
+}
+
+
+
+.fo a {
+    margin: 0 10px; 
+    font-size: 24px;
+    color:#ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.fo a:hover {
+    color:#fefefe;
+}
+
+
+
+.address-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.address-section h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color:#fefefe;
+}
+
+.address-section iframe {
+    border-radius: 10px;
+}
+
+
+.end {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color:#fefefe;
+}
+ 
+@font-face {
+    font-family: 'Somar';
+    src: url(ponts/somar_files) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Somar', sans-serif;
+}
+
+/* صفحة من نحن  */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+
+.about-item {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.about-item h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #2c3e50; 
+}
+
+
+.about-item p {
+  font-size: 19px;
+  color: #555555;
+  line-height: 1.6;
+}
+
+ 
+/* صفحة العروض والباقات  */
+
+.section-title {
+    font-size: 3.5rem; 
+    color: rgb(23, 50, 64); 
+    margin-bottom: 15px; 
+    margin-top: 25px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    text-align: center;
+}
+.section-description {
+    font-size: 1.8rem; 
+    color: #7f8c8d; 
+    line-height: 1.8; 
+    margin-bottom: 20px; 
+    text-align: center;
+}
+.offers-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px; 
+}
+
+.offers-table th,
+.offers-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.offers-table th {
+  background-color: rgba(34, 74, 95, 0.696);
+  font-size: 16px;
+  font-weight: bold;
+  font-size: 25px;
+  color:white ;
+}
+
+.offers-table td {
+  font-size: 21px;
+  background-color:#f8f8f8;
+  color: rgb(23, 50, 64) ;
+}
+
+.offers-table del {
+  color: red;
+}
+
+
+/* صفحة الخدمات */
+.service {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    gap: 20px;
+}
+
+
+.service-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+
+.service-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #2c3e505e;
+}
+
+
+.service-name {
+    font-size: 1.8rem;
+    color: rgb(23, 50, 64);
+    font-weight: bold;
+}
+
+
+.service-left {
+    max-width: 600px;
+    text-align: right;
+    direction: rtl;
+}
+
+.service-left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-left li {
+    font-size: 1.1rem;
+    margin: 8px 0;
+    line-height: 1.6;
+    color:#7f8c8d;
+}
+
+.service-left strong {
+    color: #476f89;
+}
+.closing-text{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #203b4c;
+}
+/* صفحة الأسئلة الشائعة */
+
+#faq-section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.intro-text {
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+
+.faq-title {
+  font-size: 2rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+
+.faq-item h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+
+.faq-item p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  line-height: 1.8;
+  margin-left: 20px;
+}
